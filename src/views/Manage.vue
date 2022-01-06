@@ -68,14 +68,14 @@ export default {
       this.unsvaedFlag = value;
     },
   },
-  beforeRouteLeave(next) {
-    if (!this.unsvaedFlag) {
-      next();
-    } else {
-      /* eslint-disable-next-line no-alert, no-restricted-globals */
-      const leave = confirm("You have unsaved changes! Are you sure you want to leave?");
-      next(leave);
-    }
-  },
+  // beforeRouteLeave(next) {
+  //   if (!this.unsvaedFlag) {
+  //     next();
+  //   } else {
+  //     /* eslint-disable-next-line no-alert, no-restricted-globals */
+  //     const leave = confirm("You have unsaved changes! Are you sure you want to leave?");
+  //     next(leave);
+  //   }
+  // },
 };
 </script>
