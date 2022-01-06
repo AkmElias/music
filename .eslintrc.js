@@ -13,7 +13,7 @@ module.exports = {
     "max-len": ["error", { code: 250 }],
     quotes: "off",
     "linebreak-style": 0,
-    "object-curly-newline": false,
+    "object-curly-newline": 0,
   },
   overrides: [
     {
