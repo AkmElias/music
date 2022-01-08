@@ -2,6 +2,9 @@
   "home": {
     "listen": "Listen to Great Music!"
   },
+  "manage": {
+    "my_songs": "My Songs"
+  },
   "register": {
     "TOS": "Terms of Service",
     "accept": "I accept Music's {0}"
