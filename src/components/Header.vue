@@ -23,6 +23,11 @@
             </li>
           </template>
         </ul>
+        <ul class="flex flex-row mt-1 ml-auto">
+          <li>
+            <a class="px-2 text-white" href="#" @click.prevent="changeLocale">{{ currentLocale }}</a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -42,9 +47,15 @@ export default {
         this.$router.push({ name: "home" });
       }
     },
+    changeLocale() {
+      this.$i18n.locale = this.$i18n.locale === "fr" ? "en" : "fr";
+    },
   },
   computed: {
     ...mapState(["userLoggedIn"]),
+    currentLocale() {
+      return this.$i18n.locale === "fr" ? "French" : "English";
+    },
   },
 };
 </script>

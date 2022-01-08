@@ -1,0 +1,12 @@
+{
+  "home": {
+    "listen": "Listen to Great Music!"
+  },
+  "register": {
+    "TOS": "Terms of Service",
+    "accept": "I accept Music's {0}"
+  },
+  "song": {
+    "comment_count": "Comments | 1 Comment | {counut} Comments "
+  }
+}
