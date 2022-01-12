@@ -59,6 +59,15 @@ export default {
         if (file.type !== "audio/mpeg") {
           //   return;
           console.log("dsfkdlk");
+        } else if (!navigator.onLine) {
+          this.uploads.push({
+            task: {},
+            current_progress: 100,
+            name: file.name,
+            variant: "bg-red-400",
+            icon: "fas fa-times",
+            text_class: "text-red-400",
+          });
         } else {
           const storageRef = storage.ref();
           const songsRef = storageRef.child(`songs/${file.name}`);
