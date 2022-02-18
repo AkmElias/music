@@ -90,7 +90,9 @@ export default {
   },
   computed: {
     ...mapGetters(["playing"]),
-    ...mapState(["userLoggedIn"]),
+    ...mapState({
+      userLoggedIn: (state) => state.auth.userLoggedIn,
+    }),
 
     sortedComments() {
       return this.comments.slice().sort((a, b) => {

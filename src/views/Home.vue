@@ -51,7 +51,6 @@ export default {
   },
   created() {
     this.getSongs();
-    console.log(`translation: $t("home.listen")`);
     window.addEventListener("scroll", this.handleScroll);
   },
   beforeUnmount() {
